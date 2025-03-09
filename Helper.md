@@ -39,3 +39,13 @@
 
 
 ![alt text](image-12.png)
+
+## Gotchas
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+from our storage lesson we learned the all these array values can be stored in one 32 byte slot 
+in memory it will be stored into several course of 32 bytes slots
+
+![alt text](image-15.png)
+
