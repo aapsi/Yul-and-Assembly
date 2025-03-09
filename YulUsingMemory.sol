@@ -29,6 +29,8 @@ contract UsingMemory {
         return keccak256(toBeHashed);
     }
 
+// in this function we are storing 1, 2, 3 in memory and then hashing it
+// here we do not need to loadmemeory pointer because technically we aare returning control back to this contract and our memory will be cleared
     function hashV2() external pure returns (bytes32) {
         assembly {
             let freeMemoryPointer := mload(0x40)
