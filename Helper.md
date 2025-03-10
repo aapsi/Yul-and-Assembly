@@ -49,3 +49,48 @@ in memory it will be stored into several course of 32 bytes slots
 
 ![alt text](image-15.png)
 
+
+## Calldata
+
+
+![alt text](image-16.png)
+
+![alt text](image-17.png)
+
+
+![alt text](image-18.png)
+
+
+![alt text](image-19.png)
+
+![alt text](image-20.png)
+calldatacopy(0, 0, calldatasize()) -> over here they are simply copying the entirety of the call data into memory and then saying from 0 to the calldatasize pass that  on to the function
+
+this is not memory safe at all  becausecalldata can be arbitarily long and can overwrite those 64 bytes of scratch space
+but in the context of this function is being used , the transaction will end here and the memory will be erased anyways
+
+
+# encoding dynamic
+## eg 1
+![alt text](image-23.png)
+
+![alt text](image-24.png)
+
+## eg 2
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+## eg 3
+
+![alt text](image-25.png)
+![alt text](image-26.png)
+
+## eg 4
+
+![alt text](image-27.png)
+![alt text](image-28.png)
+
+## eg 5
+![alt text](image-30.png)
+![alt text](image-29.png)
